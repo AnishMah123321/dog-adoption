@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dddd"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the Dog"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="#e50000"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="30sp"
+        android:textStyle="bold">
+    </TextView>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/colorWhite"
+        android:background="@drawable/rectangles">
+
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgView1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rectangle"
+            android:background="@drawable/camera">
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/rectangles"
+            android:hint="Contact Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="10dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangles"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Contact Number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:padding="10dp" >
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangles"
+            android:hint="Email Address"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/dName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangles"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Dog Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="10dp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/breed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangles"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Breed"
+            android:padding="10dp">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangles"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Description"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textAlignment="textStart">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floatingSearchView"
+            style="@style/searchViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"
+            app:floatingSearch_leftActionMode="showSearch"
+            app:floatingSearch_searchBarMarginLeft="16dp"
+            app:floatingSearch_searchBarMarginRight="16dp"
+            app:floatingSearch_searchBarMarginTop="16dp"
+            app:floatingSearch_searchHint="Search..."
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_suggestionsListAnimDuration="250" />
+
+
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/postBtn"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:text="POST"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:backgroundTint="#e50000"
+        android:background="@drawable/rectangles">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
+</ScrollView>

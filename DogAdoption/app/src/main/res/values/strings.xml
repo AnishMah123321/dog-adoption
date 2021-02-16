@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">FYP</string>
+
+
+    <string name="nameerror">Enter Valid Name</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="passworderror">Enter Some Password</string>
+    <string name="cnpassworderror">Password do not match</string>
+    <string name="mobileerror">Enter Valid Mobile Number</string>
+
+
+    <string-array name="Dog_Shelter">
+        <item>Shelter 1</item>
+        <item>Shelter 2</item>
+        <item>Shelter 3</item>
+        <item>Shelter 4</item>
+        <item>Shelter 5</item>
+        <item>Shelter 6</item>
+        <item>Shelter 7</item>
+
+    </string-array>
+
+    <string-array name="Dog_Shelter_Description">
+        <item>Shelter 1 Description</item>
+        <item>Shelter 2 Description</item>
+        <item>Shelter 3 Description</item>
+        <item>Shelter 4 Description</item>
+        <item>Shelter 5 Description</item>
+        <item>Shelter 6 Description</item>
+        <item>Shelter 7 Description</item>
+
+    </string-array>
+
+    <string-array name="Dog_List_Detail">
+        <item> Dog 1 Detail </item>
+        <item> Dog 2 Detail </item>
+        <item> Dog 3 Detail </item>
+        <item> Dog 4 Detail </item>
+        <item> Dog 5 Detail </item>
+        <item> Dog 6 Detail </item>
+        <item> Dog 7 Detail </item>
+
+    </string-array>
+
+
+    <string name="Navigation_Drawer_Open">Open</string>
+    <string name="Navigation_Drawer_Close">Close</string>
+
+    <string name="title_activity_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+
+
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1053001784877",
+    "firebase_url": "https://save-the-dog-263911.firebaseio.com",
+    "project_id": "save-the-dog-263911",
+    "storage_bucket": "save-the-dog-263911.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053001784877:android:d2aac0a9cb27ae7385e2a4",
+        "android_client_info": {
+          "package_name": "com.codefororlando.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053001784877-848ajeshb0o294nib0ge33f95vslnbda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codefororlando.fyp",
+            "certificate_hash": "6b27e562e765314ff942aefa7a02dcdad4359f83"
+          }
+        },
+        {
+          "client_id": "1053001784877-gsgcrqvj8gmcf61q6r1id7up3ttucpl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgmrX-YdNFPu5rVLpp4d7JwF9OLzXvBbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053001784877-gsgcrqvj8gmcf61q6r1id7up3ttucpl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

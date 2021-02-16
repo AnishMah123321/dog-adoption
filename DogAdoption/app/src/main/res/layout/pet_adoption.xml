@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dashboard_bg">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Do you want to Adopt a Dog?"
+    android:fontFamily="@font/montserrat_regular"
+    android:textSize="25dp"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/rectangles"
+    android:textColor="@color/colorWhite"
+    android:textStyle="bold">
+
+</TextView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/montserrat_regular"
+    android:text="Please fill in the form:"
+    android:textSize="25dp"
+    android:background="@drawable/rectangles"
+  android:layout_marginBottom="30dp"
+    android:layout_margin="10dp"
+    android:textColor="@color/colorWhite"
+    android:textStyle="bold">
+</TextView>
+    <EditText
+        android:id="@+id/adoptName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/rectangle"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:hint="Your Name">
+
+    </EditText>
+    <EditText
+        android:id="@+id/adoptNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:inputType="phone"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/rectangle"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:hint="Contact Number">
+
+    </EditText>
+    <EditText
+        android:id="@+id/adoptAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/rectangle"
+        android:hint="Your Address"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/adoptEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:background="@drawable/rectangle"
+        android:hint="Your Email Address"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite">
+
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle"
+        >
+        <TextView
+            android:id="@+id/textadopt"
+            android:text="Have you adopted a dog before?"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/radioyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:padding="25dp"
+            android:text="Yes"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="25dp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:text="No"
+            android:textSize="25dp"
+            android:padding="25dp"
+           android:layout_alignParentRight="true"
+            android:layout_margin="25dp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+        </RadioButton>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/submitBtn"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:backgroundTint="#e50000"
+        android:background="@drawable/rectangle">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
+    </ScrollView>

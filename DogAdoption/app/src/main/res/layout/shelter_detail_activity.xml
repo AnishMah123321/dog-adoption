@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/shelterImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+        >
+
+    </ImageView>
+
+        <TextView
+            android:id="@+id/shelterDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shelter 1"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/shelterD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shelter Description"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:padding="10dp"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fabFloatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_labels_textColor="#FFFFFF"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        tools:visibility="visible"
+        app:menu_fab_size="normal">
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/fabLabelContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone_in_talk_black_24dp"
+            app:fab_label="Contact"
+            app:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/fabLabelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email_black_24dp"
+            app:fab_label="Email"
+            app:fab_size="mini"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
+

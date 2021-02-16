@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_google_signin_btn_text_dark_focused"
+    android:elevation="4dp"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+    <ImageView
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_icon"
+        android:layout_marginLeft="200dp">
+    </ImageView>
+
+
+</androidx.appcompat.widget.Toolbar>

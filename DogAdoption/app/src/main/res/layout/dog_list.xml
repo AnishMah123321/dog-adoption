@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@+id/dogRl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<com.mikhaellopez.circularimageview.CircularImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/dogImage"
+    android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/dogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOG 1"
+        android:layout_toRightOf="@id/dogImage"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:padding="15dp"
+        android:textSize="10sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Name"
+        android:layout_toRightOf="@id/dogImage"
+        android:textSize="10sp"
+        android:layout_below="@id/dogName"
+        android:layout_margin="5dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:layout_toRightOf="@id/dogImage"
+        android:textSize="10sp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/contactName"
+        android:textColor="@color/black">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/contactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Email"
+        android:layout_toRightOf="@id/dogImage"
+        android:textSize="10sp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/contactNumber"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:id="@+id/Dbreed"
+        android:layout_toRightOf="@id/dogImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog Breed"
+        android:layout_margin="5dp"
+        android:layout_below="@id/contactEmail"
+        android:textColor="@color/black"
+        android:textSize="10dp">
+    </TextView>
+    <TextView
+        android:id="@+id/DogDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog Description"
+        android:textColor="@color/black"
+        android:layout_below="@id/Dbreed"
+        android:layout_toRightOf="@id/dogImage"
+        android:textSize="10dp"
+        android:padding="10dp">
+    </TextView>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

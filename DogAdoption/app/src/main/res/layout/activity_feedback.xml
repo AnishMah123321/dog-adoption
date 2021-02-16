@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dashboard_bg"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/feedback1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please Give Your Feedback!"
+    android:textColor="@color/colorWhite"
+    android:textSize="25sp"
+    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
+    android:fontFamily="@font/montserrat_bold">
+
+</TextView>
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/edit1"
+        android:background="@drawable/rectangles"
+        android:layout_below="@id/feedback1"
+        android:hint="Name">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edit1"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rectangles"
+        android:textColorHint="@color/colorWhite"
+        android:id="@+id/edit2"
+        android:hint="Give Your Feedback">
+
+    </EditText>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating_bar"
+        android:numStars="5"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangles"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_margin="10dp"
+        android:stepSize="0.5">
+
+    </RatingBar>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:text="Send Feedback"
+        android:backgroundTint="#e50000"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnSend"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:background="@drawable/rectangles"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/rating_bar"
+        android:layout_marginTop="20dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

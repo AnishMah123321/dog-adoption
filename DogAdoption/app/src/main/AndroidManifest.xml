@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codefororlando.fyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FYP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".navigation.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".Dashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard">
+            </meta-data>
+        </activity>
+        <activity android:name=".signup.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dashboard" />
+        <activity android:name=".signup.RegisterActivity" />
+        <activity android:name=".dog.DogListActivity" />
+        <activity android:name=".shelter.DogShelterActivity" />
+        <activity android:name=".shelter.DetailShelterActivity" />
+        <activity android:name=".maps.MapActivity" />
+        <activity android:name=".AdoptDogActivity" />
+        <activity android:name=".dog.DogDetailActivity"></activity>
+        <activity android:name=".navigation.AboutUsActivity" />
+        <activity android:name=".navigation.FeedbackActivity" />
+        <activity android:name=".navigation.ProfileActivity"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name=".AddPetActivity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
